@@ -21,6 +21,19 @@ div {
     margin-bottom: 1rem;
 }
 
+footer a {
+    text-align: center;
+    padding: 3px;
+    color: #aae3ffba;
+    margin-top: auto;
+}
+
+.content-without-footer {
+    min-height: calc(100vh - 15ex);
+    flex-direction: column;
+    justify-content:space-between;
+}
+
 /* Main game container */
 
 input {

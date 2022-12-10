@@ -20,37 +20,45 @@
 </head>
 
 <body>
-  <h2>Guess the correct <em>singular</em> article!</h2>
+  <div class="content-without-footer">
 
-  <div class="center core-container">
-    <h1 class="center word">
-      <div id="word" class="center checking-choice" hx-get="/word" hx-trigger="load"></div>
-      <img src="spinner.svg" class="center checking-choice" />
-    </h1>
+    <h2>Guess the correct <em>singular</em> article!</h2>
 
-    <form class="buttons" id="choice" hx-patch="/choice" hx-ext="json-enc"
-      hx-vals="js:{word: document.getElementById('word').textContent}" hx-target="#choices-table" hx-swap="afterbegin"
-      hx-indicator=".checking-choice">
-      <input type="submit" hx-trigger="click" value="Der" name="article" />
-      <input type="submit" hx-trigger="click" value="Die" name="article" />
-      <input type="submit" hx-trigger="click" value="Das" name="article" />
-    </form>
+    <div class="center core-container">
+      <h1 class="center word">
+        <div id="word" class="center checking-choice" hx-get="/word" hx-trigger="load"></div>
+        <img src="spinner.svg" class="center checking-choice" />
+      </h1>
+
+      <form class="buttons" id="choice" hx-patch="/choice" hx-ext="json-enc"
+        hx-vals="js:{word: document.getElementById('word').textContent}" hx-target="#choices-table" hx-swap="afterbegin"
+        hx-indicator=".checking-choice">
+        <input type="submit" hx-trigger="click" value="Der" name="article" />
+        <input type="submit" hx-trigger="click" value="Die" name="article" />
+        <input type="submit" hx-trigger="click" value="Das" name="article" />
+      </form>
+    </div>
+
+    <table class="center">
+      <caption>Picks</caption>
+      <colgroup>
+        <col />
+        <col />
+        <col style="min-width: 8em;" />
+      </colgroup>
+      <thead>
+        <tr class="checking-choice">
+          <th colspan="3">Checking...</th>
+        </tr>
+      </thead>
+      <tbody id="choices-table"></tbody>
+    </table>
+
   </div>
 
-  <table class="center">
-    <caption>Picks</caption>
-    <colgroup>
-      <col/>
-      <col/>
-      <col style="min-width: 8em;" />
-    </colgroup>
-    <thead>
-      <tr class="checking-choice">
-        <th colspan="3">Checking...</th>
-      </tr>
-    </thead>
-    <tbody id="choices-table"></tbody>
-  </table>
+  <footer>
+    <p><a href="mailto:derdiedas@alexpovel.de">Contact</a></p>
+  </footer>
 </body>
 
 </html>
