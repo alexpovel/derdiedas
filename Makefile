@@ -1,6 +1,9 @@
 serverup:
 	@uvicorn main:app --reload
 
+typecheck:
+	mypy main.py
+
 update:
 	curl -L https://unpkg.com/htmx.org/dist/htmx.min.js > static/htmx.min.js
 	curl -L https://unpkg.com/htmx.org/dist/ext/json-enc.js > static/json-enc.js

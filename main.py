@@ -27,12 +27,12 @@ with open("data/terms.json", encoding="utf-8") as f:
 
 
 @app.get("/word", response_class=PlainTextResponse)
-async def word():
+async def word() -> Word:
     return random.choice(WORDS)
 
 
 @app.patch("/choice", response_class=HTMLResponse)
-async def choice(choice: Term):
+async def choice(choice: Term) -> HTMLResponse:
     current_word = choice.word
     chosen_article = choice.article.lower()
 
