@@ -1,46 +1,67 @@
-﻿/* General settings */
+﻿/* General document settings */
 
 body {
     background-color: #293238;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    justify-items: stretch;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 body,
 input {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
     color: #d9dcdc;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
+.loading {
+    display: none;
 }
 
-div {
-    padding: 1rem;
-    margin-bottom: 1rem;
+.htmx-request.loading {
+    display: unset;
 }
 
-footer a {
+/* CSS grid settings */
+
+h1 {
+    grid-column: 1 / -1;
     text-align: center;
-    padding: 3px;
-    color: #aae3ffba;
-    margin-top: auto;
 }
 
-.content-without-footer {
-    min-height: calc(100vh - 15ex);
-    flex-direction: column;
-    justify-content:space-between;
+.game-box {
+    grid-column: 2 / 3;
+    background: #c1795d;
+    border-radius: 3ex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(10ex, auto));
+    place-items: center;
 }
 
-/* Main game container */
+.game-box #word {
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+}
 
-input {
+.game-box #word.loading {
+    display: block;
+}
+
+/* The `loading` class is redundant but we need high specificity here to
+override */
+.game-box #word.htmx-request.loading {
+    display: none;
+}
+
+.game-box input {
     font-size: x-large;
-    text-align: center;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.5em;
     background-color: #9c6a56;
     border-radius: 1ex;
     padding: 1ex;
@@ -48,74 +69,50 @@ input {
     border-style: solid;
 }
 
-input:hover {
+.game-box input:hover,
+.game-box input:active {
     background-color: #604337;
     cursor: pointer;
 }
 
-.core-container {
-    background: #c1795d;
-    border-radius: 3ex;
-    width: fit-content;
-    max-width: 100%;
-    min-width: 35%;
-}
-
-.core-container .word {
-    min-height: 6ex;
-}
-
-/* Choices table */
-
-table {
-    border-collapse: collapse;
-    margin-top: 5ex;
-}
-
-th,
-td,
-caption {
-    padding: 1rem;
+.user-picks {
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 2ex;
+    margin-top: 4ex;
     opacity: 0.7;
     font-weight: bold;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
 }
 
-td:nth-child(1), td:nth-child(2) {
-    text-align: end;
+.user-picks .articles {
+    grid-column: 1 / 2;
+    text-align: right;
+    display: grid;
+    column-gap: 1.5em;
+    justify-content: right;
 }
 
-td:nth-child(3) {
-    text-align: start;
-}
-
-.word {
-    font-style: italic;
-}
-
-.correct {
-    text-decoration: green underline 0.4ex;
-}
-
-.wrong {
+.user-picks .articles .wrong {
+    grid-column: 1 / 2;
     text-decoration: red underline 0.3ex;
 }
 
-.checking-choice {
-    display: none;
+.user-picks .articles .correct {
+    grid-column: 2 / 3;
+    text-decoration: green underline 0.4ex;
 }
 
-.htmx-request.checking-choice {
-    display: block;
+.user-picks .chosen-word {
+    grid-column: 2 / 3;
 }
 
-#word.checking-choice {
-    display: block;
+footer {
+    grid-column: 1 / -1;
+    place-self: center;
 }
 
-#word.checking-choice.htmx-request {
-    display: none;
-}
-
-tr.htmx-request.checking-choice {
-    display: table-row;
+footer a {
+    color: #aae3ffba;
 }

@@ -44,11 +44,17 @@ async def choice(choice: Term) -> HTMLResponse:
     answered_correctly = chosen_article == correct_article
 
     row = f"""
-    <tr>
-        <td class="wrong">{'' if answered_correctly else chosen_article}</td>
-        <td class="correct">{correct_article}</td>
-        <td>{current_word}</td>
-    </tr>
+    <div class="articles">
+        <div class="wrong">
+            {'' if answered_correctly else chosen_article}
+        </div>
+        <div class="correct">
+            {correct_article}
+        </div>
+    </div>
+    <div class="chosen-word">
+        {current_word}
+    </div>
     <div id="word" hx-swap-oob="innerHTML">{await word()}</div>
     """
     return HTMLResponse(content=row)
