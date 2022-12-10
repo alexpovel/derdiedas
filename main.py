@@ -1,7 +1,6 @@
 import json
 import random
 from http import HTTPStatus
-import time
 
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, PlainTextResponse
