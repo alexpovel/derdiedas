@@ -33,6 +33,11 @@ h1 {
     text-align: center;
 }
 
+h1 em {
+    text-decoration: underline;
+    font-style: normal;
+}
+
 .game-box {
     grid-column: 2 / 3;
     background: #c1795d;
