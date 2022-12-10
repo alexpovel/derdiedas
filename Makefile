@@ -1,8 +1,10 @@
+RUN = poetry run
+
 serverup:
-	@uvicorn main:app --reload
+	${RUN} uvicorn main:app --reload
 
 typecheck:
-	mypy main.py
+	${RUN} mypy main.py
 
 update:
 	curl -L https://unpkg.com/htmx.org/dist/htmx.min.js > static/htmx.min.js
