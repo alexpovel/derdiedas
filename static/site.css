@@ -40,7 +40,7 @@ h1 em {
 
 .game-box {
     grid-column: 2 / 3;
-    background: #c1795d;
+    background: #9b593e;
     border-radius: 3ex;
     display: grid;
     grid-template-columns: 1fr;
@@ -67,7 +67,7 @@ override */
 .game-box input {
     font-size: x-large;
     margin: 0.5em;
-    background-color: #9c6a56;
+    background-color: #604337;
     border-radius: 1ex;
     padding: 1ex;
     border-color: #604337;
@@ -76,7 +76,7 @@ override */
 
 .game-box input:hover,
 .game-box input:active {
-    background-color: #604337;
+    background-color: #9c6a56;
     cursor: pointer;
 }
 
