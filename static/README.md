@@ -5,7 +5,7 @@
 To avoid CDNs and ship all assets directly, they are included here directly.
 Their respective licenses are:
 
-- [`htmx.min.js`](htmx.min.js), [`json-enc.js`](json-enc.js):
+- [`htmx.min.js`](js/htmx.min.js):
 
   > BSD 2-Clause License
   >
@@ -33,7 +33,7 @@ Their respective licenses are:
   > OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
   > OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-- [`spinner.svg`](spinner.svg):
+- [`spinner.svg`](img/spinner.svg):
 
   > The MIT License (MIT)
   >
@@ -44,6 +44,6 @@ Their respective licenses are:
   > The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
   >
   > THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-- [`favicon.ico`](favicon.ico):
+- [`favicon.ico`](icon/favicon.ico) and all other icons:
 
   Generated using <https://favicon.io/favicon-generator/>, Website by John Sorrentino, Copyright 2022
