@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.0](https://github.com/alexpovel/derdiedas/compare/v0.4.0...v0.5.0) (2022-12-11)
+
+
+### Features
+
+* Set proper caching headers for static assets ([34f5999](https://github.com/alexpovel/derdiedas/commit/34f59993271d7c206faac008ae755fa94c0abd35))
+
+
+### Bug Fixes
+
+* site webmanifest icon paths ([1fe5057](https://github.com/alexpovel/derdiedas/commit/1fe505737940f38cff9b5b2413f23978e6faff2e))
+
+
+### Documentation
+
+* Update static license links ([bf87d8b](https://github.com/alexpovel/derdiedas/commit/bf87d8b6841a9ebeb5b1b605abf63f169149cb12))
+
 ## [0.4.0](https://github.com/alexpovel/derdiedas/compare/v0.3.0...v0.4.0) (2022-12-11)
 
 
