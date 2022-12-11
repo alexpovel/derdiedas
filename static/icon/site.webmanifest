@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Der Die Das?!",
+    "short_name": "Der Die Das?!",
+    "start_url": "/",
     "icons": [
         {
             "src": "/static/icon/android-chrome-192x192.png",
