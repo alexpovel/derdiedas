@@ -99,9 +99,15 @@ override */
     justify-content: right;
 }
 
+.user-picks .articles .wrong,
+.user-picks .articles .correct {
+    text-decoration-line: underline;
+}
+
 .user-picks .articles .wrong {
     grid-column: 1 / 2;
-    text-decoration: red underline 0.3ex;
+    text-decoration-color: #d53131;
+    text-decoration-thickness: 0.3ex;
 }
 
 .user-picks .articles .wrong.hidden {
@@ -110,7 +116,8 @@ override */
 
 .user-picks .articles .correct {
     grid-column: 2 / 3;
-    text-decoration: green underline 0.4ex;
+    text-decoration-color: #039703;
+    text-decoration-thickness: 0.4ex;
 }
 
 .user-picks .chosen-word {
