@@ -25,7 +25,7 @@ with open("data/terms.json", encoding="utf-8") as f:
 
     # For correctness checks:
     WORDS_TO_ARTICLES: dict[Word, Article] = {
-        term["word"]: term["article"].casefold() for term in terms
+        term["word"]: term["article"] for term in terms
     }
 
     # For random picking:
@@ -54,14 +54,14 @@ async def choice(request: Request) -> HTMLResponse:
     # Doesn't implement `__match_args__`, so match more primitively for now.
     match request.query_params.multi_items():
         case [
-            ("article", str(a)),
-            ("word", str(w)),
-        ] if (article := a.casefold()) in ARTICLES and w in WORDS_TO_ARTICLES.keys():
+            ("article", str(article)),
+            ("word", str(word)),
+        ] if article in ARTICLES and word in WORDS_TO_ARTICLES.keys():
             pass  # We gucci
         case _:
             return HTMLResponse(status_code=HTTPStatus.BAD_REQUEST)
 
-    correct_article = WORDS_TO_ARTICLES[w]
+    correct_article = WORDS_TO_ARTICLES[word]
     answered_correctly = article == correct_article
 
     row = f"""
@@ -74,7 +74,7 @@ async def choice(request: Request) -> HTMLResponse:
         </div>
     </div>
     <div class="chosen-word">
-        {w}
+        {word}
     </div>
     <div id="word" hx-swap-oob="innerHTML">{random_word()}</div>
     """
