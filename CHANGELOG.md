@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.2](https://github.com/alexpovel/derdiedas/compare/v0.5.1...v0.5.2) (2022-12-11)
+
+
+### Bug Fixes
+
+* Align input buttons via CSS grid as well, fixing iOS centering issues ([832c6be](https://github.com/alexpovel/derdiedas/commit/832c6be28252017fcde1676f960e472f46bf731b))
+* Use correctly-cased input values, saving on case conversions ([0be6a29](https://github.com/alexpovel/derdiedas/commit/0be6a29d0890307dac3fc45b29fde7a62a15ca5d))
+
+
+### Documentation
+
+* Fix mention of FastAPI -&gt; Starlette ([efa767a](https://github.com/alexpovel/derdiedas/commit/efa767afc8b3ed8ea2e178ecafee945547f8ba82))
+
 ## [0.5.1](https://github.com/alexpovel/derdiedas/compare/v0.5.0...v0.5.1) (2022-12-11)
 
 
