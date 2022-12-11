@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/alexpovel/derdiedas/compare/v0.3.0...v0.4.0) (2022-12-11)
+
+
+### Features
+
+* Drop `FastAPI`, use `starlette` directly ([317c7ae](https://github.com/alexpovel/derdiedas/commit/317c7aee2293ae3d7d69329fdb3ee04d4870540f))
+
+
+### Documentation
+
+* Add hint on `poetry` setup ([7b7c16c](https://github.com/alexpovel/derdiedas/commit/7b7c16c0a5c6fa00297f61f6537300b2d291a496))
+
 ## [0.3.0](https://github.com/alexpovel/derdiedas/compare/v0.2.0...v0.3.0) (2022-12-11)
 
 
