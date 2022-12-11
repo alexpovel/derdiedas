@@ -104,6 +104,10 @@ override */
     text-decoration: red underline 0.3ex;
 }
 
+.user-picks .articles .wrong.hidden {
+    display: none;
+}
+
 .user-picks .articles .correct {
     grid-column: 2 / 3;
     text-decoration: green underline 0.4ex;
