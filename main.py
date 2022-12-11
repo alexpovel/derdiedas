@@ -51,10 +51,8 @@ async def word(request: Request) -> PlainTextResponse:
 
 
 async def choice(request: Request) -> HTMLResponse:
-    form = await request.form()
-
-    # `FormData` doesn't define `__match_args__`, so match more primitively for now.
-    match form.multi_items():
+    # Doesn't implement `__match_args__`, so match more primitively for now.
+    match request.query_params.multi_items():
         case [
             ("article", str(a)),
             ("word", str(w)),
@@ -105,7 +103,7 @@ middleware = [
 routes = [
     Route("/", home, methods=["GET"]),
     Route("/word", word, methods=["GET"]),
-    Route("/choice", choice, methods=["PATCH"]),
+    Route("/choice", choice, methods=["GET"]),
     Mount("/static", StaticFiles(directory="static")),
 ]
 

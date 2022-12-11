@@ -29,7 +29,7 @@
     <div id="word" class="loading" hx-get="/word" hx-trigger="load"></div>
     <img src="/static/img/spinner.svg" class="loading" />
 
-    <form hx-patch="/choice" hx-vals="js:{word: document.getElementById('word').textContent}" hx-target=".user-picks"
+    <form hx-get="/choice" hx-vals="js:{word: document.getElementById('word').textContent}" hx-target=".user-picks"
       hx-swap="afterbegin" hx-indicator=".loading">
       <input type="submit" hx-trigger="click" value="Der" name="article" /><input type="submit" hx-trigger="click"
         value="Die" name="article" /><input type="submit" hx-trigger="click" value="Das" name="article" />

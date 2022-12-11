@@ -10,7 +10,6 @@ readme = "README.md"
 python = "^3.10"
 starlette = "^0.23.1"
 uvicorn = {extras = ["standard"], version = "^0.20.0"}
-python-multipart = "^0.0.5"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
