@@ -4,7 +4,7 @@ A plain and simple, yet interactive and sleek website built with modern, yet [bo
 
 - [htmx](https://htmx.org/)
 - [CSS grid layouting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-- [Python's FastAPI](https://fastapi.tiangolo.com/), served by [uvicorn](https://www.uvicorn.org/)
+- [starlette](https://www.starlette.io/), served by [uvicorn](https://www.uvicorn.org/)
 - [SVG animations](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate)
 - theming roughly inspired by [Material Theme](https://material-theme.com/)
 - no (direct) JavaScript 😲😲😲
