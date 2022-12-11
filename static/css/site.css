@@ -70,9 +70,15 @@ override */
     display: none;
 }
 
-.game-box input {
+.game-box form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game-box form input {
     font-size: x-large;
-    margin: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     background-color: #604337;
     border-radius: 1ex;
     padding: 1ex;
@@ -80,12 +86,8 @@ override */
     border-style: solid;
 }
 
-.game-box form input {
-    text-align: center;
-}
-
-.game-box input:hover,
-.game-box input:active {
+.game-box form input:hover,
+.game-box form input:active {
     background-color: #9c6a56;
     cursor: pointer;
 }
