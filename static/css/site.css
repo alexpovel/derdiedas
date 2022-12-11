@@ -80,6 +80,10 @@ override */
     border-style: solid;
 }
 
+.game-box form input {
+    text-align: center;
+}
+
 .game-box input:hover,
 .game-box input:active {
     background-color: #9c6a56;
