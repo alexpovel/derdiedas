@@ -99,19 +99,19 @@ override */
     justify-content: right;
 }
 
-.user-picks .articles .wrong,
+.user-picks .articles .incorrect,
 .user-picks .articles .correct {
     text-decoration-line: underline;
     min-width: 2.5em;
 }
 
-.user-picks .articles .wrong {
+.user-picks .articles .incorrect {
     grid-column: 1 / 2;
     text-decoration-color: #d53131;
     text-decoration-thickness: 0.3ex;
 }
 
-.user-picks .articles .wrong.hidden {
+.user-picks .articles .incorrect.hidden {
     display: none;
 }
 

@@ -68,7 +68,7 @@ async def choice(request: Request) -> HTMLResponse:
 
     row = f"""
     <div class="articles">
-        <div class="wrong{" hidden" if answered_correctly else ""}">
+        <div class="incorrect{" hidden" if answered_correctly else ""}">
             {article}
         </div>
         <div class="correct">
