@@ -4,8 +4,10 @@ from http import HTTPStatus
 from typing import TypedDict
 
 from starlette.applications import Starlette
+from starlette.middleware import Middleware
+from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 from starlette.requests import Request
-from starlette.responses import HTMLResponse, PlainTextResponse
+from starlette.responses import HTMLResponse, PlainTextResponse, Response
 from starlette.routing import Mount, Route
 from starlette.staticfiles import StaticFiles
 
@@ -81,6 +83,25 @@ async def choice(request: Request) -> HTMLResponse:
     return HTMLResponse(content=row)
 
 
+class StaticCachingMiddleware(BaseHTTPMiddleware):
+    async def dispatch(
+        self,
+        request: Request,
+        call_next: RequestResponseEndpoint,
+    ) -> Response:
+        response = await call_next(request)
+        if request.url.path.startswith("/static"):
+            response.headers[
+                "Cache-Control"
+            ] = "public, max-age=604800, must-revalidate"
+        return response
+
+
+middleware = [
+    Middleware(StaticCachingMiddleware),
+]
+
+
 routes = [
     Route("/", home, methods=["GET"]),
     Route("/word", word, methods=["GET"]),
@@ -88,4 +109,4 @@ routes = [
     Mount("/static", StaticFiles(directory="static")),
 ]
 
-app = Starlette(routes=routes)
+app = Starlette(routes=routes, middleware=middleware)
