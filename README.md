@@ -20,4 +20,7 @@ All this coming in at around 250 lines total.
    3. [make](https://www.gnu.org/software/make/)
 2. Run:
    1. `poetry install`
+
+      For best experience, issue `poetry config virtualenvs.in-project true` before this step, such that a `.venv` will be created in your current directory upon installation.
+      This is generally easier for IDEs and tooling to pick up on.
    2. `make serverup`
