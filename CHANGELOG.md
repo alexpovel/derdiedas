@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/alexpovel/derdiedas/compare/v0.2.0...v0.3.0) (2022-12-11)
+
+
+### Features
+
+* Add language attribute to elements ([8a7144a](https://github.com/alexpovel/derdiedas/commit/8a7144a91b4b84d59db3f52b8a4cbcc74831ab0a))
+* Add meta description to site. ([c800e3d](https://github.com/alexpovel/derdiedas/commit/c800e3d7d1f9b451f94db9b4f95484ae0751a31d))
+
+
+### Documentation
+
+* Add setup instructions to README ([b586e8f](https://github.com/alexpovel/derdiedas/commit/b586e8fae0c754b64d617f2a2b5a37679274f067))
+
 ## [0.2.0](https://github.com/alexpovel/derdiedas/compare/v0.1.0...v0.2.0) (2022-12-10)
 
 
