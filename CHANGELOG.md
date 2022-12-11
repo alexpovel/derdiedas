@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.1](https://github.com/alexpovel/derdiedas/compare/v0.5.0...v0.5.1) (2022-12-11)
+
+
+### Bug Fixes
+
+* Center-align form input elements ([7885c72](https://github.com/alexpovel/derdiedas/commit/7885c7205b6004e1e28d956be01ee40cfa04c15b))
+* Change `PATCH` -&gt; `GET` ([61adcf3](https://github.com/alexpovel/derdiedas/commit/61adcf30877fb55a95143a0dba4338517eaf407d))
+* Fix Safari `text-decoration` with underlining ([cfe4999](https://github.com/alexpovel/derdiedas/commit/cfe4999d8d155ff469d4541dd033b05676493816))
+* Grant margins so elements don't touch outer ones ([e09067c](https://github.com/alexpovel/derdiedas/commit/e09067c889bdf78e5acaab43788ffc6ab513706c))
+* Properly align left-most article column ([a81d58f](https://github.com/alexpovel/derdiedas/commit/a81d58fc051ad3ee2bf67cc533706fbf6e374c13))
+* Unify all titles/names/... to 'Der Die Das?! ([eb49813](https://github.com/alexpovel/derdiedas/commit/eb4981343166cc443697697918a526101eba85df))
+
 ## [0.5.0](https://github.com/alexpovel/derdiedas/compare/v0.4.0...v0.5.0) (2022-12-11)
 
 
