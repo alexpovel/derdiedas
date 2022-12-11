@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/alexpovel/derdiedas/compare/v0.5.2...v0.6.0) (2022-12-11)
+
+
+### Features
+
+* Clean word list (remove wrong, duplicate, ambiguous, outdated or inappropriate entries) ([09de828](https://github.com/alexpovel/derdiedas/commit/09de8284bd0ebf217f135887798228c49818976f)), closes [#6](https://github.com/alexpovel/derdiedas/issues/6)
+
 ## [0.5.2](https://github.com/alexpovel/derdiedas/compare/v0.5.1...v0.5.2) (2022-12-11)
 
 
