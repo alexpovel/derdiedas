@@ -40,14 +40,6 @@
     "word":"Angebot"
   },
   {
-    "article":"der",
-    "word":"Angestellte"
-  },
-  {
-    "article":"die",
-    "word":"Angestellte"
-  },
-  {
     "article":"die",
     "word":"Angst"
   },
@@ -146,10 +138,6 @@
   {
     "article":"der",
     "word":"Aufzug"
-  },
-  {
-    "article":"die",
-    "word":"Auge"
   },
   {
     "article":"das",
@@ -261,10 +249,6 @@
   },
   {
     "article":"die",
-    "word":"Beamte"
-  },
-  {
-    "article":"die",
     "word":"Beamtin"
   },
   {
@@ -274,14 +258,6 @@
   {
     "article":"das",
     "word":"Beispiel"
-  },
-  {
-    "article":"der",
-    "word":"Bekannte"
-  },
-  {
-    "article":"die",
-    "word":"Bekannte"
   },
   {
     "article":"das",
@@ -377,18 +353,6 @@
   },
   {
     "article":"der",
-    "word":"Briefkasten"
-  },
-  {
-    "article":"die",
-    "word":"Briefmarke"
-  },
-  {
-    "article":"die",
-    "word":"Brieftasche"
-  },
-  {
-    "article":"der",
     "word":"Briefumschlag"
   },
   {
@@ -433,15 +397,7 @@
   },
   {
     "article":"das",
-    "word":"Cafe"
-  },
-  {
-    "article":"die",
-    "word":"CD"
-  },
-  {
-    "article":"die",
-    "word":"CD-ROM"
+    "word":"Café"
   },
   {
     "article":"der",
@@ -474,14 +430,6 @@
   {
     "article":"die",
     "word":"Dauer"
-  },
-  {
-    "article":"der",
-    "word":"Deutsche"
-  },
-  {
-    "article":"die",
-    "word":"Deutsche"
   },
   {
     "article":"der",
@@ -628,14 +576,6 @@
     "word":"Ermäßigung"
   },
   {
-    "article":"der",
-    "word":"Erwachsene"
-  },
-  {
-    "article":"die",
-    "word":"Erwachsene"
-  },
-  {
     "article":"das",
     "word":"Essen"
   },
@@ -682,10 +622,6 @@
   {
     "article":"die",
     "word":"Farbe"
-  },
-  {
-    "article":"das",
-    "word":"Fax"
   },
   {
     "article":"der",
@@ -760,10 +696,6 @@
     "word":"Flur"
   },
   {
-    "article":"die",
-    "word":"Flur"
-  },
-  {
     "article":"der",
     "word":"Fluss"
   },
@@ -828,10 +760,6 @@
     "word":"Führerschein"
   },
   {
-    "article":"die",
-    "word":"Führung"
-  },
-  {
     "article":"das",
     "word":"Fundbüro"
   },
@@ -854,10 +782,6 @@
   {
     "article":"der",
     "word":"Garten"
-  },
-  {
-    "article":"das",
-    "word":"Gas"
   },
   {
     "article":"der",
@@ -1157,22 +1081,10 @@
   },
   {
     "article":"der",
-    "word":"Jugendliche"
-  },
-  {
-    "article":"die",
-    "word":"Jugendliche"
-  },
-  {
-    "article":"der",
     "word":"Juli"
   },
   {
     "article":"der",
-    "word":"Junge"
-  },
-  {
-    "article":"das",
     "word":"Junge"
   },
   {
@@ -1213,14 +1125,6 @@
   },
   {
     "article":"die",
-    "word":"Kassette"
-  },
-  {
-    "article":"der",
-    "word":"Kassettenrecorder"
-  },
-  {
-    "article":"die",
     "word":"Katze"
   },
   {
@@ -1233,7 +1137,7 @@
   },
   {
     "article":"die",
-    "word":"Kenntnisse"
+    "word":"Kenntnis"
   },
   {
     "article":"das",
@@ -1242,10 +1146,6 @@
   {
     "article":"die",
     "word":"Kette"
-  },
-  {
-    "article":"das",
-    "word":"Kfz"
   },
   {
     "article":"das",
@@ -1372,14 +1272,6 @@
     "word":"Kühlschrank"
   },
   {
-    "article":"der",
-    "word":"Kunde"
-  },
-  {
-    "article":"die",
-    "word":"Kunde"
-  },
-  {
     "article":"die",
     "word":"Kündigung"
   },
@@ -1390,14 +1282,6 @@
   {
     "article":"der",
     "word":"Kurs"
-  },
-  {
-    "article":"der",
-    "word":"Laden"
-  },
-  {
-    "article":"das",
-    "word":"Laden"
   },
   {
     "article":"das",
@@ -1418,10 +1302,6 @@
   {
     "article":"das",
     "word":"Leben"
-  },
-  {
-    "article":"die",
-    "word":"Lebensmittel"
   },
   {
     "article":"das",
@@ -1460,10 +1340,6 @@
     "word":"LKW"
   },
   {
-    "article":"der",
-    "word":"Loch"
-  },
-  {
     "article":"das",
     "word":"Loch"
   },
@@ -1473,10 +1349,6 @@
   },
   {
     "article":"der",
-    "word":"Lohn"
-  },
-  {
-    "article":"die",
     "word":"Lohn"
   },
   {
@@ -1564,10 +1436,6 @@
     "word":"Mensch"
   },
   {
-    "article":"der",
-    "word":"Messer"
-  },
-  {
     "article":"das",
     "word":"Messer"
   },
@@ -1613,22 +1481,10 @@
   },
   {
     "article":"die",
-    "word":"Möbel"
-  },
-  {
-    "article":"das",
-    "word":"Möbel"
-  },
-  {
-    "article":"die",
     "word":"Mode"
   },
   {
     "article":"der",
-    "word":"Moment"
-  },
-  {
-    "article":"das",
     "word":"Moment"
   },
   {
@@ -1641,10 +1497,6 @@
   },
   {
     "article":"der",
-    "word":"Morgen"
-  },
-  {
-    "article":"das",
     "word":"Morgen"
   },
   {
@@ -1740,10 +1592,6 @@
     "word":"Nummer"
   },
   {
-    "article":"der",
-    "word":"Ober"
-  },
-  {
     "article":"das",
     "word":"Obst"
   },
@@ -1769,10 +1617,6 @@
   },
   {
     "article":"die",
-    "word":"Orange"
-  },
-  {
-    "article":"das",
     "word":"Orange"
   },
   {
@@ -1848,10 +1692,6 @@
     "word":"Plan"
   },
   {
-    "article":"die",
-    "word":"Plastik"
-  },
-  {
     "article":"das",
     "word":"Plastik"
   },
@@ -1896,10 +1736,6 @@
     "word":"Programm"
   },
   {
-    "article":"der",
-    "word":"Prospekt"
-  },
-  {
     "article":"die",
     "word":"Prüfung"
   },
@@ -1929,14 +1765,6 @@
   },
   {
     "article":"der",
-    "word":"Raucher"
-  },
-  {
-    "article":"die",
-    "word":"Raucherin"
-  },
-  {
-    "article":"der",
     "word":"Raum"
   },
   {
@@ -1956,19 +1784,11 @@
     "word":"Reifen"
   },
   {
-    "article":"das",
-    "word":"Reifen"
-  },
-  {
     "article":"die",
     "word":"Reinigung"
   },
   {
     "article":"der",
-    "word":"Reis"
-  },
-  {
-    "article":"das",
     "word":"Reis"
   },
   {
@@ -1978,10 +1798,6 @@
   {
     "article":"das",
     "word":"Reisebüro"
-  },
-  {
-    "article":"der",
-    "word":"Reiseführer"
   },
   {
     "article":"die",
@@ -2013,22 +1829,6 @@
   },
   {
     "article":"der",
-    "word":"Rosé"
-  },
-  {
-    "article":"die",
-    "word":"Rosé"
-  },
-  {
-    "article":"das",
-    "word":"Rosé"
-  },
-  {
-    "article":"der",
-    "word":"Rücken"
-  },
-  {
-    "article":"das",
     "word":"Rücken"
   },
   {
@@ -2070,10 +1870,6 @@
   {
     "article":"das",
     "word":"Schiff"
-  },
-  {
-    "article":"der",
-    "word":"Schild"
   },
   {
     "article":"das",
@@ -2149,10 +1945,6 @@
   },
   {
     "article":"die",
-    "word":"See"
-  },
-  {
-    "article":"die",
     "word":"Sehenswürdigkeit"
   },
   {
@@ -2177,10 +1969,6 @@
   },
   {
     "article":"der",
-    "word":"Service"
-  },
-  {
-    "article":"das",
     "word":"Service"
   },
   {
@@ -2264,10 +2052,6 @@
     "word":"Steuer"
   },
   {
-    "article":"das",
-    "word":"Steuer"
-  },
-  {
     "article":"der",
     "word":"Stock"
   },
@@ -2336,10 +2120,6 @@
     "word":"Tag"
   },
   {
-    "article":"das",
-    "word":"Tag"
-  },
-  {
     "article":"die",
     "word":"Tankstelle"
   },
@@ -2356,20 +2136,12 @@
     "word":"Taxi"
   },
   {
-    "article":"der",
-    "word":"Teil"
-  },
-  {
     "article":"das",
     "word":"Teil"
   },
   {
     "article":"das",
     "word":"Telefon"
-  },
-  {
-    "article":"das",
-    "word":"Telefonbuch"
   },
   {
     "article":"der",
@@ -2454,14 +2226,6 @@
   {
     "article":"die",
     "word":"Tüte"
-  },
-  {
-    "article":"der",
-    "word":"Tyr"
-  },
-  {
-    "article":"die",
-    "word":"Tyr"
   },
   {
     "article":"die",
@@ -2576,10 +2340,6 @@
     "word":"Vorsicht"
   },
   {
-    "article":"die",
-    "word":"Vorwahl"
-  },
-  {
     "article":"der",
     "word":"Wagen"
   },
@@ -2618,10 +2378,6 @@
   {
     "article":"der",
     "word":"Westen"
-  },
-  {
-    "article":"der",
-    "word":"Wetter"
   },
   {
     "article":"das",
@@ -2692,14 +2448,6 @@
     "word":"Zeit"
   },
   {
-    "article":"die",
-    "word":"Zeitschrift"
-  },
-  {
-    "article":"die",
-    "word":"Zeitung"
-  },
-  {
     "article":"das",
     "word":"Zentrum"
   },
@@ -2710,10 +2458,6 @@
   {
     "article":"das",
     "word":"Zeugnis"
-  },
-  {
-    "article":"die",
-    "word":"Zigarette"
   },
   {
     "article":"das",
