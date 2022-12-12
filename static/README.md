@@ -47,3 +47,14 @@ Their respective licenses are:
 - [`favicon.ico`](icon/favicon.ico) and all other icons:
 
   Generated using <https://favicon.io/favicon-generator/>, Website by John Sorrentino, Copyright 2022
+- [GitHub Logo](img/github.svg):
+
+  [They say](https://github.com/logos):
+
+  > Do these awesome things
+  >
+  > - Use a permitted GitHub logo to link to GitHub.
+  > - Use the Invertocat logo as a social button to link to your GitHub profile or project.
+  > - Use a permitted GitHub logo to inform others that your project integrates with GitHub.
+  > - Use the GitHub logo in a blog post or news article about GitHub.
+  > - Use the permitted GitHub logos less prominently than your own company or product name or logo.

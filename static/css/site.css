@@ -142,6 +142,8 @@ footer {
     place-self: center;
 }
 
-footer a {
-    color: #aae3ffba;
+footer img {
+    opacity: 0.5;
+    margin: 2ex;
+    max-height: 3ex;
 }
