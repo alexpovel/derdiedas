@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.7.0](https://github.com/alexpovel/derdiedas/compare/v0.6.0...v0.7.0) (2022-12-12)
+
+
+### Features
+
+* Optimize image sizes ([ce5ddc0](https://github.com/alexpovel/derdiedas/commit/ce5ddc00a4886fc21ba8c3657cb4246570693ffd))
+
+
+### Documentation
+
+* Fix lie 👀 ([05938de](https://github.com/alexpovel/derdiedas/commit/05938debe346a5fc14f8ac74fe56ccd30add3cf6))
+
 ## [0.6.0](https://github.com/alexpovel/derdiedas/compare/v0.5.2...v0.6.0) (2022-12-11)
 
 
