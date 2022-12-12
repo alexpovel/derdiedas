@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/alexpovel/derdiedas/compare/v0.7.0...v0.8.0) (2022-12-12)
+
+
+### Features
+
+* Replace 'Contact' string with GitHub (logo) link ([c1d31e9](https://github.com/alexpovel/derdiedas/commit/c1d31e90a8b2aa90032beb3ed15ee1ff1d421644))
+
 ## [0.7.0](https://github.com/alexpovel/derdiedas/compare/v0.6.0...v0.7.0) (2022-12-12)
 
 
