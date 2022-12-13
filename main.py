@@ -6,6 +6,7 @@ from typing import TypedDict
 from starlette.applications import Starlette
 from starlette.middleware import Middleware
 from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
+from starlette.middleware.gzip import GZipMiddleware
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, PlainTextResponse, Response
 from starlette.routing import Mount, Route
@@ -97,6 +98,7 @@ class StaticCachingMiddleware(BaseHTTPMiddleware):
 
 middleware = [
     Middleware(StaticCachingMiddleware),
+    Middleware(GZipMiddleware),
 ]
 
 
