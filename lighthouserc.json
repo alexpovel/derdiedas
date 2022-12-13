@@ -1,0 +1,14 @@
+{
+    "ci": {
+        "healthcheck": {
+            "fatal": true
+        },
+        "collect": {
+            "startServerCommand": "poetry run uvicorn main:app --port 8000",
+            "startServerReadyPattern": "Application startup complete",
+            "url": [
+                "http://localhost:8000/"
+            ]
+        }
+    }
+}

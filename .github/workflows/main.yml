@@ -35,6 +35,12 @@ jobs:
       - name: Run type checks
         run: make typecheck
 
+      - name: Run Lighthouse URL checks
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          uploadArtifacts: true
+          runs: 3
+
   release-please:
     name: Execute release chores
 

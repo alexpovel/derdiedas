@@ -2,6 +2,11 @@
 
 *.xlsx
 
+# Google Lighthouse files
+
+*.lighthouse.*
+.lighthouseci/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
