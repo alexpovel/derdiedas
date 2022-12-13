@@ -26,7 +26,7 @@
   <h1 lang="en">Guess the correct <em>singular</em> article!</h1>
 
   <div class="game-box">
-    <div id="word" class="loading" hx-get="/word" hx-trigger="load">Loading up...</div>
+    <div id="word" class="loading" hx-get="/word" hx-trigger="load" hx-indicator=".loading">Loading up...</div>
     <img src="/static/img/spinner.svg" class="loading" />
 
     <form hx-get="/choice" hx-vals="js:{word: document.getElementById('word').textContent}" hx-target=".user-picks"
