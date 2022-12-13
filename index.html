@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="A plain and simple game to guess (and learn) German articles." />
 
-  <script src="/static/js/htmx.min.js"></script>
+  <script defer="true" src="/static/js/htmx.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/site.css?v=1" />
 
@@ -26,7 +26,7 @@
   <h1 lang="en">Guess the correct <em>singular</em> article!</h1>
 
   <div class="game-box">
-    <div id="word" class="loading" hx-get="/word" hx-trigger="load"></div>
+    <div id="word" class="loading" hx-get="/word" hx-trigger="load">Loading up...</div>
     <img src="/static/img/spinner.svg" class="loading" />
 
     <form hx-get="/choice" hx-vals="js:{word: document.getElementById('word').textContent}" hx-target=".user-picks"
