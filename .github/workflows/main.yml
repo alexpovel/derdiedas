@@ -57,6 +57,8 @@ jobs:
         with:
           release-type: python
           package-name: derdiedas
+          extra-files: |
+            index.html
 
   build-and-push-image:
     name: Build Docker image and push to GitHub Container Registry
