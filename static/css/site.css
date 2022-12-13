@@ -142,8 +142,13 @@ footer {
     place-self: center;
 }
 
+footer a {
+    display: block;
+    margin: 1ex;
+}
+
 footer img {
     opacity: 0.5;
-    margin: 2ex;
+    margin: 0;
     max-height: 3ex;
 }
