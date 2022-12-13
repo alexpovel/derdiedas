@@ -27,7 +27,7 @@
 
   <div class="game-box">
     <div id="word" class="loading" hx-get="/word" hx-trigger="load" hx-indicator=".loading">Loading up...</div>
-    <img src="/static/img/spinner.svg" class="loading" />
+    <img alt="Loading spinner" src="/static/img/spinner.svg" class="loading" />
 
     <form hx-get="/choice" hx-vals="js:{word: document.getElementById('word').textContent}" hx-target=".user-picks"
       hx-swap="afterbegin" hx-indicator=".loading">
@@ -39,7 +39,7 @@
   <div class="user-picks"></div>
 
   <footer>
-    <a href="https://github.com/alexpovel/derdiedas"><img src="/static/img/github.svg" /></a>
+    <a href="https://github.com/alexpovel/derdiedas"><img alt="GitHub Logo" src="/static/img/github.svg" /></a>
   </footer>
 </body>
 
