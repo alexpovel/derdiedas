@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.9.0](https://github.com/alexpovel/derdiedas/compare/v0.8.1...v0.9.0) (2022-12-13)
+
+
+### Features
+
+* Also show loading spinner on *initial* word load ([abc0d31](https://github.com/alexpovel/derdiedas/commit/abc0d31ccde369e9950e8c7071ec5c3bb82bf51e))
+* Defer JS script loading, provide initial text to prevent content shifting ([5f84f69](https://github.com/alexpovel/derdiedas/commit/5f84f693ca2b6c2b0217b11841877a1501583240))
+* gzip responses ([600c73a](https://github.com/alexpovel/derdiedas/commit/600c73ad1b8eb81321234519b2c9d46b8aaafc5c))
+* Provide accessible link info ([168f15f](https://github.com/alexpovel/derdiedas/commit/168f15fa7d4b834d3ce64a47e7c8e2a60137b780))
+* Provide alt text for images ([f1fc4cb](https://github.com/alexpovel/derdiedas/commit/f1fc4cb51b4cfafee96b27944218a258b61c073d))
+* Provide cache busting on every new release ([5a246f4](https://github.com/alexpovel/derdiedas/commit/5a246f45f5dd0656bfb54ec6ff1fafdad133d996))
+
+
+### Bug Fixes
+
+* Fix link area being larger than contained image itself ([5b23c4d](https://github.com/alexpovel/derdiedas/commit/5b23c4de83ab91f72949b97f0c16e30df0a63b43))
+
 ## [0.8.1](https://github.com/alexpovel/derdiedas/compare/v0.8.0...v0.8.1) (2022-12-12)
 
 

@@ -8,19 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="A plain and simple game to guess (and learn) German articles." />
 
-  <script defer="true" src="/static/js/htmx.min.js?v=0.8.1"></script>
+  <script defer="true" src="/static/js/htmx.min.js?v=0.9.0"></script>
 
-  <link rel="stylesheet" href="/static/css/site.css?v=0.8.1" />
+  <link rel="stylesheet" href="/static/css/site.css?v=0.9.0" />
 
-  <link rel="icon" type="image/x-icon" href="/static/icon/favicon.ico?v=0.8.1" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png?v=0.8.1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png?v=0.8.1">
-  <link rel="icon" type="image/png" sizes="192x192" href="/static/icon/android-chrome-192x192.png?v=0.8.1">
-  <link rel="icon" type="image/png" sizes="512x512" href="/static/icon/android-chrome-512x512.png?v=0.8.1">
+  <link rel="icon" type="image/x-icon" href="/static/icon/favicon.ico?v=0.9.0" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png?v=0.9.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png?v=0.9.0">
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/icon/android-chrome-192x192.png?v=0.9.0">
+  <link rel="icon" type="image/png" sizes="512x512" href="/static/icon/android-chrome-512x512.png?v=0.9.0">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png?v=0.8.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png?v=0.9.0">
 
-  <link rel="manifest" type="application/manifest+json" href="/static/site.webmanifest?v=0.8.1">
+  <link rel="manifest" type="application/manifest+json" href="/static/site.webmanifest?v=0.9.0">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 
   <div class="game-box">
     <div id="word" class="loading" hx-get="/word" hx-trigger="load" hx-indicator=".loading">Loading up...</div>
-    <img alt="Loading spinner" src="/static/img/spinner.svg?v=0.8.1" class="loading" />
+    <img alt="Loading spinner" src="/static/img/spinner.svg?v=0.9.0" class="loading" />
 
     <form hx-get="/choice" hx-vals="js:{word: document.getElementById('word').textContent}" hx-target=".user-picks"
       hx-swap="afterbegin" hx-indicator=".loading">
@@ -40,7 +40,7 @@
   <div class="user-picks"></div>
 
   <footer>
-    <a href="https://github.com/alexpovel/derdiedas" aria-label="Visit GitHub Repository"><img alt="GitHub Logo" src="/static/img/github.svg?v=0.8.1" /></a>
+    <a href="https://github.com/alexpovel/derdiedas" aria-label="Visit GitHub Repository"><img alt="GitHub Logo" src="/static/img/github.svg?v=0.9.0" /></a>
   </footer>
 </body>
 <!-- x-release-please-end -->
