@@ -86,10 +86,11 @@ override */
     border-style: solid;
 }
 
-.game-box form input:hover,
-.game-box form input:active {
-    background-color: #9c6a56;
-    cursor: pointer;
+@media (hover: hover) {
+    .game-box form input:hover {
+        background-color: #9c6a56;
+        cursor: pointer;
+    }
 }
 
 .user-picks {
