@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/alexpovel/derdiedas/compare/v0.9.0...v0.9.1) (2022-12-18)
+
+
+### Bug Fixes
+
+* Remove hover for non-hover-enabled devices (mobile) ([cb032d0](https://github.com/alexpovel/derdiedas/commit/cb032d0cf74ff054b6b8ed2c2947e6104f5de49e))
+
 ## [0.9.0](https://github.com/alexpovel/derdiedas/compare/v0.8.1...v0.9.0) (2022-12-13)
 
 
