@@ -36,7 +36,7 @@ jobs:
         run: make typecheck
 
       - name: Run Lighthouse URL checks
-        uses: treosh/lighthouse-ci-action@v9
+        uses: treosh/lighthouse-ci-action@v10
         with:
           uploadArtifacts: true
           runs: 3
