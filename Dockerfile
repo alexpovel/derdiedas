@@ -18,9 +18,9 @@ RUN chown -R app:app ${WORKDIR}
 USER 1000
 
 COPY --from=exporter /export/requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --no-warn-script-location -r requirements.txt
 
-COPY pyproject.toml index.html .
+COPY pyproject.toml index.html ./
 COPY src/ src/
 COPY data/terms.json data/
 COPY static/ static/
