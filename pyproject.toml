@@ -13,12 +13,8 @@ requires-python = ">=3.13,<4.0"
 dependencies = ["starlette", "uvicorn[standard]"]
 
 [dependency-groups]
-dev = ["black", "mypy", "isort"]
+dev = ["mypy", "ruff"]
 data = ["pandas", "openpyxl"]
-
-[tool.isort]
-# https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
-profile = "black"
 
 [tool.mypy]
 show_error_codes = true

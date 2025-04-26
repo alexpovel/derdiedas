@@ -4,7 +4,13 @@ serverup:
 	${RUN} uvicorn src.derdiedas:app --reload
 
 typecheck:
-	${RUN} --dev mypy src/
+	${RUN} --only-dev mypy src/
+
+lint:
+	${RUN} --only-dev ruff check src/
+
+formatcheck:
+	${RUN} --only-dev ruff format --check src/
 
 lighthouse:
 	npx @lhci/cli@0.14.0 autorun

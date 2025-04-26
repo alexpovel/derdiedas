@@ -27,6 +27,12 @@ jobs:
       - name: Install uv
         run: pipx install uv
 
+      - name: Run lint
+        run: make lint
+
+      - name: Run formatcheck
+        run: make formatcheck
+
       - name: Run typecheck
         run: make typecheck
 
