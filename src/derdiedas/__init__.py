@@ -90,9 +90,9 @@ class StaticCachingMiddleware(BaseHTTPMiddleware):
     ) -> Response:
         response = await call_next(request)
         if request.url.path.startswith("/static"):
-            response.headers[
-                "Cache-Control"
-            ] = "public, max-age=604800, must-revalidate"
+            response.headers["Cache-Control"] = (
+                "public, max-age=604800, must-revalidate"
+            )
         return response
 
 

@@ -4,7 +4,7 @@
             "fatal": true
         },
         "collect": {
-            "startServerCommand": "poetry run uvicorn main:app --port 8000",
+            "startServerCommand": "uv run uvicorn src.derdiedas:app --reload --port 8000",
             "startServerReadyPattern": "Application startup complete",
             "url": [
                 "http://localhost:8000/"

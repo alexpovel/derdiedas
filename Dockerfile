@@ -1,36 +1,32 @@
-# Global ARG, available to all stages (if renewed)
+FROM python:3.11-slim AS exporter
+
+WORKDIR /export
+
+# Cache-friendly dependency installation
+COPY pyproject.toml uv.lock ./
+# https://docs.astral.sh/uv/guides/integration/docker/#installing-uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/
+RUN uv export --format=requirements-txt --no-emit-project > requirements.txt
+
+FROM python:3.11-slim AS runner
+
 ARG WORKDIR="/app"
-
-FROM python:3.11 AS builder
-
-# Renew (https://stackoverflow.com/a/53682110):
-ARG WORKDIR
-
-# Don't buffer `stdout`:
-ENV PYTHONUNBUFFERED=1
-# Don't create `.pyc` files:
-ENV PYTHONDONTWRITEBYTECODE=1
-
-RUN pip install poetry && poetry config virtualenvs.in-project true
-
-WORKDIR ${WORKDIR}
-COPY . .
-
-RUN poetry install --only main
-
-FROM python:3.11-alpine
-
-ARG WORKDIR
-
 WORKDIR ${WORKDIR}
 
-COPY --from=builder ${WORKDIR} .
-
-# For options, see https://boxmatrix.info/wiki/Property:adduser
-RUN adduser app -DHh ${WORKDIR} -u 1000
+RUN useradd -u 1000 -d ${WORKDIR} -M app
+RUN chown -R app:app ${WORKDIR}
 USER 1000
 
-# App-specific settings:
+COPY --from=exporter /export/requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY pyproject.toml index.html .
+COPY src/ src/
+COPY data/terms.json data/
+COPY static/ static/
+
+# Required for Google Cloud Run to auto-detect
 EXPOSE 8080
-ENTRYPOINT [ "./.venv/bin/uvicorn", "main:app" ]
-CMD [ "--port", "8080", "--host", "0.0.0.0" ]
+
+ENTRYPOINT [ ".local/bin/uvicorn", "src.derdiedas:app" ]
+CMD [ "--host", "0.0.0.0", "--port", "8080" ]

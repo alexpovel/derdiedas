@@ -22,26 +22,16 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Install Poetry
-        run: pipx install poetry
-      - uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-          cache: poetry
+      - uses: actions/checkout@v4
 
-      - name: Set up Python environment
-        run: |
-          poetry env use ${{ matrix.python-version }}
-          poetry install
-      - name: Run type checks
+      - name: Install uv
+        run: pipx install uv
+
+      - name: Run typecheck
         run: make typecheck
 
-      - name: Run Lighthouse URL checks
-        uses: treosh/lighthouse-ci-action@v10
-        with:
-          uploadArtifacts: true
-          runs: 3
+      - name: Run Lighthouse checks
+        run: make lighthouse
 
   release-please:
     name: Execute release chores
@@ -79,10 +69,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Log in to the container registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
@@ -90,7 +80,7 @@ jobs:
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
@@ -98,7 +88,7 @@ jobs:
             type=semver,value=${{ needs.release-please.outputs.tag_name }},pattern={{major}}.{{minor}}
             type=semver,value=${{ needs.release-please.outputs.tag_name }},pattern={{major}},enable=${{ !startsWith(needs.release-please.outputs.tag_name, 'v0.') }}
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         with:
           context: .
           push: true
