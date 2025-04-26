@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.3](https://github.com/alexpovel/derdiedas/compare/v0.9.2...v0.9.3) (2025-04-26)
+
+
+### Bug Fixes
+
+* Dockerfile ([5e097a8](https://github.com/alexpovel/derdiedas/commit/5e097a80d16a2360aad0a8fa0b5626d78f58b2cf))
+
 ## [0.9.2](https://github.com/alexpovel/derdiedas/compare/v0.9.1...v0.9.2) (2025-04-26)
 
 
