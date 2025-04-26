@@ -1,4 +1,4 @@
-FROM python:3.11-slim AS exporter
+FROM python:3.13-slim AS exporter
 
 WORKDIR /export
 
@@ -8,7 +8,7 @@ COPY pyproject.toml uv.lock ./
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/
 RUN uv export --format=requirements-txt --no-emit-project > requirements.txt
 
-FROM python:3.11-slim AS runner
+FROM python:3.13-slim AS runner
 
 ARG WORKDIR="/app"
 WORKDIR ${WORKDIR}
