@@ -15,12 +15,6 @@ All this coming in at around 250 lines total.
 ## Setup
 
 1. Install:
-   1. Python 3.10+
-   2. [poetry](https://python-poetry.org/)
-   3. [make](https://www.gnu.org/software/make/)
-2. Run:
-   1. `poetry install`
-
-      For best experience, issue `poetry config virtualenvs.in-project true` before this step, such that a `.venv` will be created in your current directory upon installation.
-      This is generally easier for IDEs and tooling to pick up on.
-   2. `make serverup`
+   1. Python
+   2. [uv](https://docs.astral.sh/uv/)
+2. Run `make serverup`
