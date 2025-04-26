@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "derdiedas"
-version = "0.9.2"
+version = "0.9.3"
 description = ""
 authors = [{ name = "Alex Povel", email = "git@alexpovel.de" }]
 license = "MIT"
