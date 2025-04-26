@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.4](https://github.com/alexpovel/derdiedas/compare/v0.9.3...v0.9.4) (2025-04-26)
+
+
+### Bug Fixes
+
+* Allow non-dev dependencies for checks ([6737dd3](https://github.com/alexpovel/derdiedas/commit/6737dd3b51918e7c7a91f4e3c46c1f372fe5cafd))
+* Typing hint ([8e24797](https://github.com/alexpovel/derdiedas/commit/8e2479770c5cafb0dc0833547549e2dbb2cbe675))
+
 ## [0.9.3](https://github.com/alexpovel/derdiedas/compare/v0.9.2...v0.9.3) (2025-04-26)
 
 
