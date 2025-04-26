@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.2](https://github.com/alexpovel/derdiedas/compare/v0.9.1...v0.9.2) (2025-04-26)
+
+
+### Bug Fixes
+
+* Lighthouse lints ([f0b1613](https://github.com/alexpovel/derdiedas/commit/f0b161389144cf81942641d6dd1cebf63f7472ca))
+
 ## [0.9.1](https://github.com/alexpovel/derdiedas/compare/v0.9.0...v0.9.1) (2022-12-18)
 
 
