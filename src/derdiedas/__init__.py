@@ -9,7 +9,7 @@ from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoin
 from starlette.middleware.gzip import GZipMiddleware
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, PlainTextResponse, Response
-from starlette.routing import Mount, Route
+from starlette.routing import BaseRoute, Mount, Route
 from starlette.staticfiles import StaticFiles
 
 Word = str
@@ -102,7 +102,7 @@ middleware = [
 ]
 
 
-routes = [
+routes: list[BaseRoute] = [
     Route("/", home, methods=["GET"]),
     Route("/word", word, methods=["GET"]),
     Route("/choice", choice, methods=["GET"]),
